@@ -1,5 +1,5 @@
 from pathlib import Path
-from models import OpisZestawu
+from src.models import OpisZestawu
 import json
 
 class Parser: 
