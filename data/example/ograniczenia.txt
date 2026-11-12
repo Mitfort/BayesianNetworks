@@ -1,0 +1,5 @@
+# Przykładowe zapytania z ograniczeniami
+P(I | G in {A, B} and (S==Good or L==Good))
+P(D | not S==Good or G==A)
+P(I | atleast(2, G==A, L==Good, S==Good))
+P(D | G==C and L==Good and S==Good)

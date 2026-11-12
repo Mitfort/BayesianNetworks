@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "description": "Przykład: model student z tutoriala pgmpy"
+  },
+  "variables": {
+    "D": {
+      "description": "trudność kursu",
+      "states": [
+        "Easy",
+        "Hard"
+      ]
+    },
+    "I": {
+      "description": "zdolności studenta",
+      "states": [
+        "Dumb",
+        "Intelligent"
+      ]
+    },
+    "G": {
+      "description": "ocena z kursu",
+      "states": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "S": {
+      "description": "wynik testu SAT",
+      "states": [
+        "Bad",
+        "Good"
+      ]
+    },
+    "L": {
+      "description": "list polecający",
+      "states": [
+        "Bad",
+        "Good"
+      ]
+    }
+  },
+  "expert_edges": [
+    [
+      "D",
+      "G"
+    ],
+    [
+      "I",
+      "G"
+    ],
+    [
+      "G",
+      "L"
+    ],
+    [
+      "I",
+      "S"
+    ]
+  ],
+  "required_edges": [
+    [
+      "D",
+      "G"
+    ],
+    [
+      "I",
+      "G"
+    ],
+    [
+      "G",
+      "L"
+    ],
+    [
+      "I",
+      "S"
+    ]
+  ],
+  "forbidden_edges": [
+    [
+      "D",
+      "S"
+    ],
+    [
+      "G",
+      "S"
+    ]
+  ],
+  "tiers": [
+    [
+      "D",
+      "I"
+    ],
+    [
+      "G",
+      "S"
+    ],
+    [
+      "L"
+    ]
+  ]
+}

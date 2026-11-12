@@ -1,0 +1,9 @@
+# Przykładowe zapytania
+P(G)
+P(G | D==Easy, I==Intelligent)
+P(I | G==A, S==Good)
+P(I | G==C)
+P(I | G==C, D==Hard)
+P(G, L | S==Good)
+MAP(G | D==Easy, I==Intelligent)
+MAP(D, I | G==C, L==Bad)
