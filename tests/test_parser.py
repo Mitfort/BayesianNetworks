@@ -10,4 +10,4 @@ def test_wczytaj_opis():
     opis = parser.wczytaj_opis()
 
     assert opis is not None
-    assert opis.meta == "Przykład: model student z tutoriala pgmpy"
+    assert opis.meta['description'] == "Przykład: model student z tutoriala pgmpy"

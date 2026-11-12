@@ -1,6 +1,6 @@
 class OpisZestawu:
     def __init__(self, json_data: dict):
-        self.meta: str = json_data.get("meta", "")
+        self.meta: dict = json_data.get("meta", {})
         self.variables: dict[str, dict[str, str | list[str]]] = json_data.get("variables", {})
 
         # Graf ekspercki, może nie zawierać niektórych prawdziwych zależności
